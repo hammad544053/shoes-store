@@ -1,0 +1,135 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 600px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+header {
+  background-color: #e1ff00;
+  padding: 20px;
+  display: flex;
+  justify-content:space-between ;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+}
+
+nav {
+  padding: 14px 16px;
+  float: left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+
+  
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a:hover {
+  background-color: blue;
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  padding: 20px;
+}
+.pricess{
+  color: white;
+  background-color: rgb(57, 57, 123);
+}
+h3{
+  background-color: #e1ff00;
+}
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  inline-size: auto;
+  
+}
+
+
+.product {
+  width: calc(25% - 20px);  /* Adjust width for responsiveness */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.product img {
+  transition: 0.5s;
+  width: 100%;
+  display:block;
+}
+.product img:hover{
+  transform: scale(1.2);
+  
+}
+
+/* Add media queries for different screen sizes (optional) */
+@media only screen and (max-width: 1400px) {
+  .product {
+    width: 25%;
+    
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .product {
+    width: 30%;
+    
+  }
+}
+@media only screen and (max-width: 800px) {
+  .product {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .product {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .product {
+    width: 70%;
+  }
+}
+
+/* Add some basic styling */
+.pagination {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.pagination a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+/* Style the active page (the current page) */
+.pagination a.active {
+  
+  color: black;
+}
+footer{
+  text-align: center;
+  background-color: #e1ff00;
+}
+
