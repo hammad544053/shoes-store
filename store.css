@@ -9,6 +9,7 @@ body {
     width: 100%;
   }
 }
+
 header {
   background-color: #e1ff00;
   padding: 20px;
@@ -31,8 +32,6 @@ nav {
 }
 
 nav li {
-
-  
   display: inline-block;
   margin-right: 20px;
 }
@@ -41,6 +40,31 @@ nav a:hover {
   background-color: blue;
   text-decoration: none;
   color: black;
+}
+
+.dropdown { /* Styles for the dropdown list item */
+  position: relative; /* Needed for proper positioning of dropdown content */
+  display: inline-block; /* Maintain inline-block behavior */
+}
+
+.dropdown-content { /* Styles for the dropdown menu */
+  display: none; /* Hide the dropdown content by default */
+  position: absolute; /* Position the dropdown content relative to its parent */
+  background-color: #f1f1f1; /* Set background color */
+  min-width: 160px; /* Set minimum width for the dropdown */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add a shadow effect */
+  z-index: 1; /* Ensure the dropdown menu appears above other elements */
+}
+
+.dropdown-content a { /* Styles for the dropdown menu links */
+  color: black; /* Text color */
+  padding: 12px 16px; /* Add padding for spacing */
+  text-decoration: none; /* Remove underline */
+  display: block; /* Make links behave like block elements for full width */
+}
+
+.dropdown:hover .dropdown-content { /* Show the dropdown content on hover */
+  display: block;
 }
 
 main {
@@ -81,13 +105,13 @@ h3{
 /* Add media queries for different screen sizes (optional) */
 @media only screen and (max-width: 1400px) {
   .product {
-    width: 25%;
+    width: 20%;
     
   }
 }
 @media only screen and (max-width: 1100px) {
   .product {
-    width: 30%;
+    width: 25%;
     
   }
 }
@@ -96,17 +120,18 @@ h3{
     width: 30%;
   }
 }
+@media only screen and (max-width: 600px) {
+  .product {
+    width: 35%;
+  }
+}
 
 @media only screen and (max-width: 500px) {
   .product {
-    width: 40%;
+    width: 50%;
   }
 }
-@media only screen and (max-width: 300px) {
-  .product {
-    width: 70%;
-  }
-}
+
 
 /* Add some basic styling */
 .pagination {
