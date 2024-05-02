@@ -9,3 +9,6 @@ hamburger.addEventListener("click", function() {
   // Toggle the "responsive" class on the navbar
   navbar.classList.toggle("responsive");
 });
+
+
+
